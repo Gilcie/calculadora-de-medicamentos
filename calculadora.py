@@ -33,7 +33,8 @@ def medication_dilution(presc, conc, vol, solv):
 
 def pill_concentration(presc, conc):
     result = presc / conc
-    print(f'Administre {result} Comprimidos')
+    print(f'\n'
+          f'\n >>>>>>>>> Administre {result} Comprimidos\n')
 
 def imprimir_menu():
     print(f'-----------------------------------------'
@@ -73,6 +74,12 @@ while True:
         vol = int(input('Volume da Concentração em Mililitro(ml): '))
         solv = int(input('Volume do Solvente em Mililitro(ml): '))
         medication_dilution(presc, conc, vol, solv)
+    elif opcao == '4':
+        presc = int(input('Prescrição Médica em Miligramas(mg): '))
+        conc = int(input('Concentração Disponível em Miligramas(mg): '))
+        pill_concentration(presc,conc)
+    elif opcao == '5':
+        pass
 
 
 
