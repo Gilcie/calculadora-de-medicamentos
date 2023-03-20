@@ -31,6 +31,9 @@ def medication_dilution(presc, conc, vol, solv):
           f'\n-----------------------------------')
 
 
+def pill_concentration(presc, conc):
+    result = presc / conc
+    print(f'Administre {result} Comprimidos')
 
 def imprimir_menu():
     print(f'-----------------------------------------'
@@ -38,10 +41,10 @@ def imprimir_menu():
           f'\n2 - Medicação Endovenosa'
           f'\n3 - Diluição de Medicamentos'
           f'\n4 - Concentração de Comprimidos'
-          f'\n5 - Excluir Contato'
-          f'\n6 - Exportar Contatos para CSV'
-          f'\n7 - Importar Contatos'
-          f'\n0 - Fechar Agenda'
+          f'\n5 - '
+          f'\n6 - '
+          f'\n7 - '
+          f'\n0 - '
           f'\n-----------------------------------------')
 
 
